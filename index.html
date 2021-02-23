@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="">
+        <div class="contenant">
+
+            <div class="generalinformation">
+                <p id="general" class="partTitle">General Information</p>
+                    <div>
+                        <select name="title" id="title" class="menu">
+                            <option value="title">Title</option>
+                            <option value="Ingénieur">Ingénieur</option>
+                            <option value="Médecin">Médecin</option>
+                         </select>
+                    </div>
+
+                    <div>
+                        <input id ="firstname" type="text" placeholder="First Name">
+                        <input id="lastname" type="text" placeholder="Last Name">
+                    </div>
+
+                    <div>
+                        <select name="position" id="position" class="menu">
+                            <option value="Position">Position</option>
+                            <option value="Chef de division">Chef de division</option>
+                            <option value="Chef de bureau">Chef de service</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="text" id="company" placeholder="Company">
+                    </div>
+
+                    <div>
+                      <input type="text" id="businessarena" placeholder="Business Arena"><label for="employees"></label>
+                      <select name="employees" id="employees" aria-placeholder="Employees">
+                            <option value="Employees">Employees</option>
+                            <option value="Jordie">Jordie</option>
+                            <option value="Christian">Christian</option>
+                            <option value="François">François</option>
+                        </select>
+                    </div>        
+            </div>
+
+            <div class="contactdetails">
+
+                <p id="contact" class="partTitle">Contact Details</p>
+                    <div>
+                    <input type="text" id="street" placeholder="Street + Nr">
+                    </div>
+                    <div>
+                        <input type="text" id="additionnal" placeholder="Additional information">
+                    </div>
+                    <div>
+                        <input type="text" id="zipcode" placeholder="ZipCode"><label for="place"></label>
+                        <select name="place" id="place">
+                            <option value="Place">Place</option>
+                            <option value="Kalamu">Kalamu</option>
+                            <option value="Kasa-Vubu">Kasa-Vubu</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="country" id="country" class="menu">
+                            <option value="country">Country</option>
+                            <option value="République du congo">République du congo</option>
+                            <option value="RDC">RDC</option>
+                            <option value="Colombie">Colombie</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="number" id="code" placeholder="Code +">
+                        <input type="tel" id="phonenumber" maxlength="9" placeholder="Phone Number"><label for="phonenumber"></label>
+                    </div>
+
+                    <div>
+                        <input type="email" id="mail" placeholder="Your Email">
+                    </div>
+                    <div class="cond newButton">                        
+                        <input id="conditions" type="radio">
+                        <label for="conditions"></label> 
+                        <span id="agree">I do accept the </span> 
+                        <a href="#">Terms and Conditions</a> <br/> 
+                        <span id="forme">of your site.</span></label>
+                    </div>
+                    <div>
+                        <input type="submit" id="register" value="Register Badge">
+                    </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
